@@ -1,2 +1,2 @@
-greet/proto/*.pb.go
+*/proto/*.pb.go
 bin/*
