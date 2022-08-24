@@ -19,9 +19,15 @@ func main() {
 
 	c := pb.NewGreetServiceClient(conn)
 
-	// grpc unary
+	// grpc unary.
 	//DoGreet(c)
 
-	// grpc server streaming
-	DoGreetManyTimes(c)
+	// grpc server streaming.
+	//DoGreetManyTimes(c)
+
+	// grpc client streaming.
+	//DoLongGreet(c)
+
+	// grpc Bi-directional streaming.
+	DoGreetEvryone(c)
 }
