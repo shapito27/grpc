@@ -19,5 +19,9 @@ func main() {
 
 	c := pb.NewCalculatorServiceClient(conn)
 
-	SendNums(c)
+	//SendNums(c)
+
+	//DoSqrt(c, 8)
+	// check how client hadling eror.
+	DoSqrt(c, -34)
 }

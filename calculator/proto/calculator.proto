@@ -4,6 +4,8 @@ package calculator;
 
 option go_package = "github.com/shapito27/grpc-go-course/calculator/proto";
 
+import "sqrt.proto";
+
 message CalculatorRequest {
     int32 num_1 = 1;
     int32 num_2 = 2;
@@ -15,4 +17,5 @@ message CalculatorResponse {
 
 service CalculatorService {
     rpc Calculator (CalculatorRequest) returns (CalculatorResponse);
+    rpc Sqrt (SqrtRequest) returns (SqrtResponse);
 }
