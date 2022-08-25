@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"time"
 
 	pb "github.com/shapito27/grpc-go-course/greet/proto"
 	"google.golang.org/grpc"
@@ -29,5 +30,10 @@ func main() {
 	//DoLongGreet(c)
 
 	// grpc Bi-directional streaming.
-	DoGreetEvryone(c)
+	//DoGreetEvryone(c)
+
+	// exersise: working with deadline (ok)
+	//DoGreatWithDeadline(c, 5*time.Second)
+	// exersise: working with deadline (exceeded deadline)
+	DoGreatWithDeadline(c, 1*time.Second)
 }
