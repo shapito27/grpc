@@ -27,4 +27,6 @@ func main() {
 	update(c, id)
 
 	list(c)
+
+	deleteBlog(c, id)
 }
